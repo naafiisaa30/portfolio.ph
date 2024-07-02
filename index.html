@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./header.css"/>
     <link rel="stylesheet" href="./root.css" />
     <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./footer.css" />
 </head>
 <!-- header section -->
 <body class="container">
@@ -119,7 +120,7 @@
             <div class="section-title">
                 <h1>//MY PROJECTS</h1>
             </div>
-            <div class="projects">
+            <div id="projects" class="projects">
                 <div class="project-image-1">
                     <img src="./image/projects/image 3.png" alt="">
 
@@ -139,7 +140,7 @@
 
             </div>
             <div class="check-all-projects">
-                <button>Check all Projects</button>
+                <button onclick="handleshowmoreprojects()">Check all Projects</button>
 
             </div>
 
@@ -251,8 +252,106 @@
 
 
         </section>
+        <!-- blogs-container-end -->
+        <!-- testimonial -->
+        <section class="testimonial">
+            <div class="testimonial-head">
+                <h1 id="testimonial-head-title">TESTIMONIALS</h1>
+                <P id="testimonial-head-desc">Explore client testimonials sharing our collaborative journey from concept to execution. Witness the <br>impact of dedication, expertise, and creative solutions on their projects. Let these stories inspire <br> confidence for your next venture</P>
+
+            </div>
+            <div class="all-cards">
+                <div class="left-cards">
+                    <div class="left-card-1">
+                        <img src="./image/testimonial/t-3.png" alt="">
+                        <div>
+                            <h1 class="left-card-1-title">“Exceptional Service, Outstanding Results!”</h1>
+                        <p class="left-card-1-desc">Exceptional experience with this team! Their commitment to excellence and creativity surpassed my expectations. From concept to delivery, they turned my vision into a remarkable reality. Highly recommended for outstanding results!</p>
+                        </div>
+
+                    </div>
+                    <div class="left-card-1">
+                        <div>
+                            <h1 class="left-card-1-title">“Exceptional Service, Outstanding Results!”</h1>
+                        <p class="left-card-1-desc">Exceptional experience with this team! Their commitment to excellence and creativity surpassed my expectations. From concept to delivery, they turned my vision into a remarkable reality. Highly recommended for outstanding results!</p>
+                        </div>
+                        <img src="./image/testimonial/t-1.png" alt="">
+
+                    </div>
+
+                </div>
+                <div class="right-card">
+                    <img src="./image/testimonial/t-2.png" alt="">
+                        <div>
+                            <h1 class="left-card-1-title">“Exceptional Service, Outstanding Results!”</h1>
+                        <p class="left-card-1-desc">Exceptional experience with this team! Their commitment to excellence and creativity surpassed my expectations. From concept to delivery, they turned my vision into a remarkable reality. Highly recommended for outstanding results!</p>
+                        </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- testimonial -->
         
         
     </main>
+    <footer>
+        <section class="footer-container">
+            <div class="left-footer">
+                <div class="left-footer-title">
+                    <h1>//wanna work together?</h1>
+                </div>
+                <form onsubmit="handleContact(event)" class="form">
+                    <input class="input" type="text" name="name" placeholder="YOUR NAME" required>
+                
+                    <input class="input" type="email" name="email" placeholder="YOUR EMAIL" required>
+                
+               
+                    <input style="margin-top: 130px;" class="input" type="text" name="message" placeholder="YOUR MESSAGE" required>
+                    <div class="send-button">
+                        <button type="submit" id="send-button">SEND</button>
+        
+                    </div>
+                </form>
+
+
+                <div style="margin-top: 20px;" id="success-container">
+
+                </div>
+
+
+
+            </div>
+            <div class="right-footer">
+                <div class="right-footer-title">
+                    <h1>Others way to contact</h1>
+
+                </div>
+                <div class="gmail">
+                    <p>portfolio@gmail.com</p>
+
+                </div>
+                <div class="number">
+                    <p>01712805003</p>
+
+                </div>
+                <div class="social-icon">
+                    <a href=""><img src="./image/Social Media/Facebook.png" alt=""></a>
+                    <a href=""><img src="./image/Social Media/Instagram.png" alt=""></a>
+                    <a href=""><img src="./image/Social Media/Linkedin.png" alt=""></a>
+                    <a href=""><img src="./image/Social Media/Twitter.png" alt=""></a>
+                </div>
+
+            </div>
+
+        </section>
+        <div style="padding: 40px 40px;">
+            <hr />
+        </div>
+       <h1 style="text-align: center; padding-bottom: 20px;">© 2023, John Smith. All rights Reserved</h1>
+
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
